@@ -1,7 +1,7 @@
-python -W ignore llm_gsm8k/eval.py --model $1 && \
-python -W ignore llm_mmlu/eval.py --model $1 && \
-python -W ignore llm_tom/eval.py --model $1 && \
-python -W ignore llm_math/eval.py --model $1 && \
-python -W ignore llm_ceval/eval.py --model $1 && \
-python -W ignore llm_human_eval/eval.py --model $1 && \
-python -W ignore llm_bbh/eval.py --model $1
+pushd llm_gsm8k && python -W ignore eval.py --model $1 && popd && \
+pushd llm_mmlu && python -W ignore eval.py --model $1 && popd && \
+pushd llm_tom && python -W ignore eval.py --model $1 && popd && \
+pushd llm_math && python -W ignore eval.py --model $1 && popd && \
+pushd llm_ceval && python -W ignore eval.py --model $1 && popd && \
+pushd llm_human_eval && python -W ignore eval.py --model $1 && popd && \
+pushd llm_bbh && python -W ignore eval.py --model $1 && popd
