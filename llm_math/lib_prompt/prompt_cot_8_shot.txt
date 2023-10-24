@@ -1,0 +1,81 @@
+Question: The sum of two numbers is 6. The difference of their squares is 12. What is the positive difference of the two numbers?
+Let's think step by step
+Call the two numbers $x$ and $y$. 
+We are given that $x+y = 6$ and $x^2 - y^2 = 12$. 
+Because $x^2 - y^2$ factors into $(x+y)(x-y)$, 
+we can substitute in for $x+y$, 
+giving $6(x-y) = 12$, 
+or $x-y = \boxed{2}$.
+The answer is 2
+
+Question: Which integer is closest to the cube root of 100?
+Let's think step by step
+Either 4 or 5 is closest to $\sqrt[3]{100}$, 
+since $4^3=64$ and $5^3=125$.  
+Since $4.5^3=91.125<100$, 
+$\sqrt[3]{100}$ is closer to $\boxed{5}$ than to 4.
+The answer is 5
+
+Question: What is the largest value of $x$ such that the expression \[\dfrac{x+1}{8x^2-65x+8}\] is not defined?
+Let's think step by step
+In this particular case, the fraction will be undefined only if its denominator is equal to zero. 
+Because of this, we can ignore the numerator. 
+We start by setting the binomial in the denominator equal to 0: 
+\begin{align*} 8x^2-65x+8=0
+\\\Rightarrow\qquad (8x-1)(x-8)=0
+\end{align*} 
+We find that the two possible values for $x$ are $\frac18$ and $8$. 
+Since the question asks for the largest value, the final solution is $\boxed{8}$.
+The answer is 8
+
+Question: BoatWorks built 3 canoes in January of this year and then each subsequent calendar month they built twice the number of canoes they had built the previous month. How many total canoes were built by BoatWorks by the end of March of this year?
+Let's think step by step
+The number of boats built is $3+3\cdot2+3\cdot2^2 = 3+6+12 = \boxed{21}$.
+The answer is 21
+
+Question: If $5a+2b=0$ and $a$ is two less than $b$, what is $7b$?
+Let's think step by step
+First we begin by solving the system of equations \begin{align*}
+5a+2b&=0, \\
+b-2&=a.
+\end{align*}
+Making the substitution for $a$ from the second equation to the first, we get $5(b-2)+2b=0$, 
+which simplifies to $7b-10=0$. 
+Solving for $b$, we find that $b=\frac{10}{7}$. 
+Hence $7b=7\cdot \frac{10}{7}=\boxed{10}$.
+The answer is 10
+
+Question: Kevin Kangaroo begins hopping on a number line at 0. He wants to get to 1, but he can hop only $\frac{1}{3}$ of the distance. Each hop tires him out so that he continues to hop $\frac{1}{3}$ of the remaining distance. How far has he hopped after five hops? Express your answer as a common fraction.
+Let's think step by step
+Kevin hops $1/3$ of the remaining distance with every hop. 
+His first hop takes $1/3$ closer. 
+For his second hop, he has $2/3$ left to travel, so he hops forward $(2/3)(1/3)$. 
+For his third hop, he has $(2/3)^2$ left to travel, so he hops forward $(2/3)^2(1/3)$. 
+In general, Kevin hops forward $(2/3)^{k-1}(1/3)$ on his $k$th hop. 
+We want to find how far he has hopped after five hops. 
+This is a finite geometric series with first term $1/3$, common ratio $2/3$, and five terms. 
+Thus, Kevin has hopped $\frac{\frac{1}{3}\left(1-\left(\frac{2}{3}\right)^5\right)}{1-\frac{2}{3}} = \boxed{\frac{211}{243}}$.
+The answer is \frac{211}{243}}
+
+Question: What is the area of the region defined by the equation $x^2+y^2 - 7 = 4y-14x+3$?
+Let's think step by step
+We rewrite the equation as $x^2 + 14x + y^2 - 4y = 10$ and then complete the square, 
+resulting in  $(x+7)^2-49 + (y-2)^2-4=10$, 
+or $(x+7)^2+(y-2)^2=63$. 
+This is the equation of a circle with center $(-7, 2)$ and radius $\sqrt{63},$ 
+so the area of this region is $\pi r^2 = \boxed{63\pi}$.
+The answer is 63\pi
+
+Question: If $x^2+y^2=1$, what is the largest possible value of $|x|+|y|$?
+Let's think step by step
+If $(x,y)$ lies on the circle, 
+so does $(x,-y),$ $(-x,-y),$ and $(-x,-y),$ (which all give the same value of $|x| + |y|$), 
+so we can assume that $x \ge 0$ and $y \ge 0.$
+Then $|x| + |y| = x + y.$  Squaring, we get
+\[(x + y)^2 = x^2 + 2xy + y^2 = 1 + 2xy.\]
+Note that $(x - y)^2 \ge 0.$  
+Expanding, we get $x^2 - 2xy + y^2 \ge 0,$ so $2xy \le x^2 + y^2 = 1.$  
+Hence,\[1 + 2xy \le 2,\]which means $x + y \le \sqrt{2}.$  
+Equality occurs when $x = y = \frac{1}{\sqrt{2}},$ 
+so the maximum value of $|x| + |y|$ is $\boxed{\sqrt{2}}.$
+The answer is \sqrt{2}
