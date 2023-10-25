@@ -23,7 +23,7 @@ LLM Evals
 Recently, great progress has been made in the field of large language models (hereinafter referred to as LLM). Many claim that small models with less than 10B parameters can achieve comparable performance to GPT-4. is this real?
 
 
-## Complex Reasoning Benchmark
+## Complex reasoning benchmark
 
 The key difference is whether the model can complete complex tasks. To this end, we have compiled a series of complex reasoning tasks, including reasoning (GSM8K), code (HumanEval), theory of mind (ToM), difficult reasoning (MATH), symbols (BBH), English knowledge (MMLU), Chinese knowledge (C -EVAL) to measure the model's performance in difficult tasks:
 
@@ -60,7 +60,7 @@ The key difference is whether the model can complete complex tasks. To this end,
 | MOSS                    | 16B | 5.23   | 0         | 10/0   | 4.4  | 27.1 | 5.87    | 28.31  |
 | BELLE-LLAMA-7B-2M       | 7B  | 2.35   | 11        | 20/10  | 2.7  | 32.6 | 25.65   | 30.39  |
 
-## how to use
+## How to use
 
 To run the evaluation, a Hugging Face compatible model needs to be downloaded and placed in the PATH_TO_CONVERTED_WEIGHTS directory. Then execute the following script:
 
