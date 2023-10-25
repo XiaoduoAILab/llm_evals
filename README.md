@@ -1,4 +1,24 @@
-# LLM Evals
+<!-- markdownlint-disable first-line-h1 -->
+<!-- markdownlint-disable html -->
+
+<div align="center">
+<h1>
+LLM Evals
+</h1>
+</div>
+
+<div align="center">
+
+[![license](https://img.shields.io/github/license/modelscope/modelscope.svg)](https://github.com/XiaoduoAILab/llm_evals/blob/main/LICENSE)
+<h4 align="center">
+    <p>
+        <b>中文</b> |
+        <a href="https://github.com/XiaoduoAILab/llm_evals/blob/main/README_EN.md">English</a>
+    <p>
+</h4>
+</div>
+
+# 介绍
 
 最近，大语言模型（large language models，以下简称LLM）领域取得了很大的进展。许多人声称参数量小于 10B 的小模型可以实现与 GPT-4 相当的性能。这是真的吗？
 
@@ -50,4 +70,7 @@ bash scripts/test_reason.sh PATH_TO_CONVERTED_WEIGHTS
 
 你会看到七个评测依次进行，并将结果输出。
 
+# 协议
+
+对本仓库源码的使用遵循开源许可协议 [Apache 2.0](https://github.com/XiaoduoAILab/llm_evals/blob/main/LICENSE)。
 
