@@ -1,4 +1,4 @@
-# LLM Evals （大语言模型评测）
+# LLM Evals
 
 LLM Evals 是用于评估大语言模型（large language models，以下简称LLM）表现的框架。我们汇编了一个包括推理（GSM8K）、代码（HumanEval）、心智理论（ToM）、高难度推理（MATH）、英文知识（MMLU）、推理（BBH）、中文知识（C-EVAL）等任务的列表，以衡量哪些模型更好。下面是当前的排行榜。尽管许多数字还没跑出来，但当前的内容仍然能给一个大概的模型排名：
 
