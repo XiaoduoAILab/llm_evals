@@ -148,7 +148,7 @@ if __name__ == "__main__":
                                                            add_bos_token=False,
                                                            add_eos_token=False,
                                                            clean_up_tokenization_spaces=True,
-                                                           use_fast=False,
+                                                           use_fast=True,
                                                            trust_remote_code=True)
 
     kwargs = {}
