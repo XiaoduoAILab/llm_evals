@@ -59,7 +59,8 @@ The key difference is whether the model can complete complex tasks. To this end,
 | Baichuan-7B             | 7B  | 5.53   | 7.9       | 20/10  | 4.8  | 42.5 | 26.75   | 42.57  |
 | MOSS                    | 16B | 5.23   | 0         | 10/0   | 4.4  | 27.1 | 5.87    | 28.31  |
 | BELLE-LLAMA-7B-2M       | 7B  | 2.35   | 11        | 20/10  | 2.7  | 32.6 | 25.65   | 30.39  |
-
+| Tencent Hunyuan                | 未知  | 70.03 | 60.36 | 0/0  | 3.6 | 32.8 | 26.08 | 39.38 |
+| xinghuov3-xfyun                    | 未知  | 2.27 | 18.29 | 10/30 | NA   | NA | NA   | NA  |
 ## How to use
 
 To run the evaluation, a Hugging Face compatible model needs to be downloaded and placed in the PATH_TO_CONVERTED_WEIGHTS directory. Then execute the following script:
