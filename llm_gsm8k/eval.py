@@ -14,10 +14,6 @@ from dataset import get_examples, extract_answer, INVALID_ANS
 
 
 def custom_stopping_criteria(input_ids: torch.LongTensor, score: torch.FloatTensor, **kwargs) -> bool:
-    # last_token = input_ids[0][-1]
-    # for stop in stop_words_ids:
-    #     if tokenizer.decode(stop) == tokenizer.decode(last_token):
-    #         return True
     if input_ids[0][-1] == 13 and input_ids[0][-2] == 13:
         return True
 
@@ -26,9 +22,9 @@ def custom_stopping_criteria(input_ids: torch.LongTensor, score: torch.FloatTens
 
 @torch.no_grad()
 def generate(prompt):
-    inputs = tokenizer.encode(prompt, return_tensors="pt").to(model.device)
-    num_tokens = inputs.shape[-1]
-    outputs = model.generate(inputs, max_new_tokens=args.seq_len, pad_token_id=tokenizer.eos_token_id,
+    inputs = tokenizer(prompt, return_tensors="pt").to(model.device)
+    num_tokens = inputs.input_ids.shape[-1]
+    outputs = model.generate(**inputs, max_new_tokens=args.seq_len, pad_token_id=tokenizer.eos_token_id,
                              stopping_criteria=StoppingCriteriaList([custom_stopping_criteria]))
     text = tokenizer.decode(outputs[0][num_tokens:]).strip()
     return text
